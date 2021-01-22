@@ -1,21 +1,21 @@
 import React from 'react';
 
 
-function Recipe ({title, calories, ingredients, image}){
+function Recipe({ title, calories, ingredients, image }) {
 
-    return(
+    return (
         <div>
             <h1>{title}</h1>
             <p>{calories}</p>
-            {/* <h2>Ingredients</h2> */}
-            {/* <p>{ingredients.map(ingredient=>(
-                <ol>
-                    <li>{ingredient}</li>
-                </ol>
-            ))}</p> */}
+            <h3>Ingredients</h3>
+            <ol>
+                {ingredients.map(ingredient => (
+                    <li>{ingredient.text}</li>
+                ))}
+            </ol>
             <img alt="recipe_image" src={image} />
         </div>
-        
+
     )
 
 }
