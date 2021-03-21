@@ -21,6 +21,7 @@ function App() {
     console.log(search);
   }
   
+  
   const getSearch = (e) => {
     e.preventDefault();
     setQuery(search);
